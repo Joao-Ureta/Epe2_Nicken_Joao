@@ -18,19 +18,7 @@ namespace Epe2_Nicken_Joao
 
         protected void btnCalcular_Click(object sender, EventArgs e)
         {
-            try
-            {
-                string input = txtnumeros.Text;
-                string[] inputValues = input.Split('-');
-
-                int[] numeros = Array.ConvertAll(inputValues, int.Parse);
-
-                int suma = numeros.Sum();
-                double promedio = numeros.Average();
-
-                lblCalcular.Text = "Resultado Suma: " + suma;
-                lblPromedio.Text = "Resultado promedio: " + promedio;
-            }
+           
         }
 
         protected void btnVolver_Click(object sender, EventArgs e)

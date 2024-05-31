@@ -39,7 +39,7 @@
         <br />
         <hr />
         <div>
-            <h2>EPE 2</h2>
+            <h2>EPE 2 JOAO URETA</h2>
             <img  src="/iMG/Evaluaciones.jpg" width="300" height="200" alt="banner" />
             <asp:Button ID="ButtonEpe2" runat="server" Text="Ir a EPE2" OnClick="ButtonEpe2_Click" BackColor="BlueViolet" />
         </div>
