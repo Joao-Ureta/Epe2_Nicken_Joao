@@ -18,41 +18,31 @@ namespace Epe2_Nicken_Joao
 
         protected void btnCalcular_Click(object sender, EventArgs e)
         {
+
             try
             {
-                int[] numeros = new int[100];
+                // Obtener los valores del txtnumeros y dividirlos en un array
+                string input = txtnumeros.Text;
+                string[] inputValues = input.Split('-');
 
-                numeros[0] = Convert.ToDouble(txtnumeros.text);
-                numeros[1] = Convert.ToDouble(txtnumeros.text);
-                numeros[2] = Convert.ToDouble(txtnumeros.text);
-                numeros[3] = Convert.ToDouble(txtnumeros.text);
-                numeros[4] = Convert.ToDouble(txtnumeros.text);
-                numeros[5] = Convert.ToDouble(txtnumeros.text);
-                numeros[6] = Convert.ToDouble(txtnumeros.text);
-                numeros[7] = Convert.ToDouble(txtnumeros.text);
-                numeros[8] = Convert.ToDouble(txtnumeros.text);
-                numeros[9] = Convert.ToDouble(txtnumeros.text);
+                // Convertir los valores de texto en números
+                int[] numeros = Array.ConvertAll(inputValues, int.Parse);
 
-                int suma = 0;
-                double promedio = suma / Convert.ToDouble(txtnumeros.text);
+                // Calcular la suma y el promedio con los metodos sum(suma) y average(promedio)
+                int suma = numeros.Sum();
+                double promedio = numeros.Average();
 
-                for(int i=0; i< numeros.Length; i++)
-                {
-                    suma += numeros[i];
-                    promedio = numeros[i];
-                    
-                }
-
-                lblcalcular.text = +suma;
-                lblpromedio.text = +promedio;
-
+                // Mostrar los resultados en lblcalcular y lblpromedio
+                lblCalcular.Text = "Resultado Suma: " + suma;
+                lblPromedio.Text = "Resultado Promedio: " + promedio;
             }
-            catch (Exception ex)
+            catch
             {
-                // Manejo de errores (por ejemplo, formato incorrecto)
-                lblCalcular.Text = "Error: Verifique los valores ingresados.";
+                // Manejo de errores
+                lblCalcular.Text = "ERROR: inserte numeros enteros con (-) para separar.";
                 lblPromedio.Text = "";
             }
+
         }
 
         protected void btnVolver_Click(object sender, EventArgs e)
