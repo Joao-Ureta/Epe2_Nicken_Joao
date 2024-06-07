@@ -43,6 +43,11 @@
             <img  src="/iMG/Evaluaciones.jpg" width="300" height="200" alt="banner" />
             <asp:Button ID="ButtonEpe2" runat="server" Text="Ir a EPE2" OnClick="ButtonEpe2_Click" BackColor="BlueViolet" />
         </div>
+        <br />
+        <hr />
+        <div>
+            <asp:Button ID="btnWebVariable" runat="server" Text="Ir a Variables" OnClick="btnWebVariable_Click" />
+        </div>
     </div>
        </form>
 </body>

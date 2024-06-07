@@ -38,5 +38,10 @@ namespace Epe22_Niken_Joao
         {
             Response.Redirect("WebForm5.aspx");
         }
+
+        protected void btnWebVariable_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("WebForm6.aspx");
+        }
     }
 }
