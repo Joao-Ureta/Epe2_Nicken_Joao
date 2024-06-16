@@ -22,14 +22,14 @@ namespace Epe2_Nicken_Joao
         {
             int variableLocal = 24;
 
-            lblLocal.Text = "Resultado Local" +(variableLocal);
-            lblInstancia.Text = "Resultado Instancia" +(variableInstancia);
-            lblEstatica.Text = "Resultado Estatica" +(VariableEstatica);
+            lblLocal.Text = "Resultado Local:" + " " +(variableLocal);
+            lblInstancia.Text = "Resultado Instancia:" + " " + (variableInstancia);
+            lblEstatica.Text = "Resultado Estatica:" + " " + (VariableEstatica);
         }
 
         protected void btnVolver_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("Index.aspx");
         }
     }
 }

@@ -67,8 +67,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="iMG\biografia.png" />
     <Content Include="iMG\Evaluaciones.jpg" />
-    <Content Include="iMG\LogoIpChile.png" />
+    <Content Include="iMG\fotoBio.jpeg" />
+    <Content Include="iMG\imagenC.jpeg" />
+    <Content Include="iMG\logo.png" />
     <Content Include="iMG\TituloWeb1.jpg" />
     <Content Include="Index.aspx" />
     <Content Include="Style.css" />
@@ -80,6 +83,7 @@
     <Content Include="WebForm4.aspx" />
     <Content Include="WebForm5.aspx" />
     <Content Include="WebForm6.aspx" />
+    <Content Include="WebForm7.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Index.aspx.cs">
@@ -131,6 +135,13 @@
     </Compile>
     <Compile Include="WebForm6.aspx.designer.cs">
       <DependentUpon>WebForm6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm7.aspx.cs">
+      <DependentUpon>WebForm7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm7.aspx.designer.cs">
+      <DependentUpon>WebForm7.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

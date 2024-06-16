@@ -13,7 +13,7 @@
         <h1>Nickens Pierre- Joao Ureta</h1>
         
         <div>
-            <img  src="/iMG/LogoIpChile.png" width="300" height="200" alt="banner" />
+            <img  src="/iMG/logo.png" width="300" height="200" alt="banner" />
         </div>
         <br />
 

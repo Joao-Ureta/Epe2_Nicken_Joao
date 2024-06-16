@@ -1,12 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm5.aspx.cs" Inherits="Epe2_Nicken_Joao.WebForm5" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm7.aspx.cs" Inherits="Epe2_Nicken_Joao.WebForm7" %>
 
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Biografía</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -59,35 +57,22 @@
             border-radius: 5px;
         }
     </style>
-    
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <h1>ARRAY Y VECTORES</h1>
-            <img  src="/iMG/Evaluaciones.jpg" width="300" height="200" alt="banner" />
+        <div class="container">
+            <div class="biography">
+                <img  src="/iMG/logo.png" width="300" height="200" alt="banner" />
+                <h1>JOAO URETA</h1>
+                <h1>Analista Programador Computacional</h1>
+                <img class="bio-image" src="/img/fotoBio.jpeg" alt="Foto Personal" />
+                <p>
+                    Hola, soy estudiante de último año como Técnico de Nivel Superior en Análisis Programador Computacional. A lo largo de mi carrera como estudiante, he disfrutado mucho de los conocimientos que he adquirido y me he ido enamorando de esta hermosa carrera, especialmente la programación.
+                    Además de mi vida como estudiante, también intento disfrutar de mi familia con el poco tiempo que dispongo. Mi esposa y dos hijos me han apoyado en este proceso, por lo cual me siento más que agradecido.
+                </p>
+            </div>
+            <a class="return-button" href="/index.aspx">Volver a la página principal</a>
         </div>
-        <br />
-        <div>
-            <h4>Ingrese valores numericos (separados por (-)) :</h4>
-        </div>
-        <div>
-            <asp:TextBox ID="txtnumeros" runat="server"></asp:TextBox>
-            <asp:Button ID="btnCalcular" runat="server" Text="Calcular" OnClick="btnCalcular_Click" BackColor="Pink" />
-        </div>
-    
-        <div>
-            <asp:Label ID="lblCalcular" runat="server" Text="Resultado Suma:" ></asp:Label>
-        </div>
-
-        <div>
-            <asp:Label ID="lblPromedio" runat="server" Text="Resulta Promedio:"></asp:Label>
-        </div>
-        <br />
-        <div>
-            <asp:Button ID="btnVolver" runat="server" Text="Volver a Index" OnClick="btnVolver_Click" BackColor="LightBlue" />
-        </div>
-        
     </form>
 </body>
 </html>

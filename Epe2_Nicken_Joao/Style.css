@@ -1,44 +1,55 @@
 ﻿body {
-    font-family: Calibri, sans-serif;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
 }
 
-.form-field {
-    margin-bottom: 10px;
-}
-
-label {
-    display: block;
-    margin-bottom: 2px;
-}
-
-input[type="text"], input[type="email"], textarea {
-    width: 50%;
-    padding: 8px;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
     box-sizing: border-box;
 }
 
-input[type="submit"] {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.logo {
+    margin-bottom: 20px;
+    max-width: 100%;
+    height: auto;
 }
 
-    input[type="submit"]:hover {
-        background-color: #45a049;
-    }
+.biography {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
 
+.bio-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px 0;
+}
 
-
-/* Estilos para el contenedor principal del formulario */
-.container {
-    max-width: 500px; /* Ancho máximo del formulario */
-    margin: 0 auto; /* Centra el formulario horizontalmente */
-    padding: 20px; /* Espaciado interno del formulario */
-    background-color: #f5f5f5; /* Color de fondo del formulario */
-    border: 1px solid #ddd; /* Borde del formulario */
-    border-radius: 5px; /* Bordes redondeados del formulario */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del formulario */
+.return-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
 }

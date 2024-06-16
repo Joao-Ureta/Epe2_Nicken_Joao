@@ -5,12 +5,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="~/Style.css" />
     <title></title>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
             <h1>TIPOS DE VARIABLES</h1>
+            <img  src="/iMG/LogoIpChile.png" width="300" height="200" alt="banner" />
+            <img  src="/iMG/imagenC.jpeg" width="300" height="200" alt="banner" />
         </div>
         <br />
         <div>
