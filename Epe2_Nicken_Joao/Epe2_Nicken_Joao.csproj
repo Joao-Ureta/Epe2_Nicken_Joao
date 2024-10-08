@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ejemploHTML.html" />
     <Content Include="iMG\biografia.png" />
     <Content Include="iMG\Evaluaciones.jpg" />
     <Content Include="iMG\fotoBio.jpeg" />
